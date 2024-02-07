@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/electron-vite.animate.svg'
-import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,11 +16,11 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <div className="card">
+      <div className="card bg-black text-red-400">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
-        <p>
+        <p className='text-red-400'>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
